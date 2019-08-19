@@ -9,11 +9,11 @@ import { HeaderComponent } from './header/header.component';
 import { PostComponent } from './posts/post/post.component';
 import { HttpClientModule } from '@angular/common/http';
 
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-
     PostComponent
   ],
   imports: [

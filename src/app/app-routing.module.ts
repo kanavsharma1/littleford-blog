@@ -4,7 +4,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { PostComponent } from './posts/post/post.component';
 
 
-const routes: Routes = [{ path: 'posts', component: PostComponent }];
+const routes: Routes = [{ path: '', component: PostComponent }];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
