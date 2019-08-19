@@ -5,21 +5,22 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { AllPostsComponent } from './posts/all-posts/all-posts.component';
+
 import { PostComponent } from './posts/post/post.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    AllPostsComponent,
+
     PostComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
-
+    NgbModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -24,10 +24,7 @@ app.use((req, res, next) => {
     next();
 });
 
-
 app.use("/posts", postRoutes);
 app.use("/users", userAuth);
-
-
 
 module.exports = app;
