@@ -10,6 +10,7 @@ import { PostComponent } from './posts/post/post.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './authentication/login/login.component';
 import { SignupComponent } from './authentication/signup/signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -19,12 +20,14 @@ import { SignupComponent } from './authentication/signup/signup.component';
     PostComponent,
     LoginComponent,
     SignupComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
