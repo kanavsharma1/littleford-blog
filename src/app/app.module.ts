@@ -9,6 +9,8 @@ import { HeaderComponent } from './header/header.component';
 import { PostComponent } from './posts/post/post.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './authentication/login/login.component';
+import { SignupComponent } from './authentication/signup/signup.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -16,13 +18,16 @@ import { LoginComponent } from './authentication/login/login.component';
     AppComponent,
     HeaderComponent,
     PostComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
